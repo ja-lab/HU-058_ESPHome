@@ -124,7 +124,8 @@ static uint8_t glyph(char c) {
     case '6': return 0b1111101;
     case '7': return 0b0000111;
     case '8': return 0b1111111;
-    case '9': return 0b1101111;
+    //case '9': return 0b1101111;
+    case '9': return 0b1100111;
     case '-': return 0b1000000;
     default:  return 0;
   }
