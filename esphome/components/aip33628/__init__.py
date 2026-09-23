@@ -6,6 +6,7 @@ from esphome.const import CONF_ID, CONF_NUMBER, PLATFORM_ESP32
 
 CODEOWNERS = ["@misterblack1"]
 ESP_PLATFORMS = [PLATFORM_ESP32]
+AUTO_LOAD = ["light"]
 
 aip33628_ns = cg.esphome_ns.namespace("aip33628")
 Aip33628Panel = aip33628_ns.class_("Aip33628Panel", cg.Component)
