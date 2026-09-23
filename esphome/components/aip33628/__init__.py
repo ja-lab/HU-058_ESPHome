@@ -1,6 +1,7 @@
 import esphome.codegen as cg
 import esphome.config_validation as cv
 from esphome import pins
+from esphome.components import light
 from esphome.components import time as time_
 from esphome.const import CONF_ID, CONF_NUMBER, PLATFORM_ESP32
 
@@ -10,6 +11,7 @@ AUTO_LOAD = ["light"]
 
 aip33628_ns = cg.esphome_ns.namespace("aip33628")
 Aip33628Panel = aip33628_ns.class_("Aip33628Panel", cg.Component)
+Aip33628Light = aip33628_ns.class_("Aip33628Light", light.LightOutput)
 
 CONF_CLK_PIN = "clk_pin"
 CONF_DATA_PIN = "data_pin"
