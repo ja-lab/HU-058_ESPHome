@@ -2,7 +2,7 @@
 
 #include "esphome/core/component.h"
 #include "esphome/core/hal.h"
-//#include "esphome/components/light/light_output.h"
+#include "esphome/components/light/light_output.h"
 #include "esphome/components/time/real_time_clock.h"
 
 #include <driver/gptimer.h>
